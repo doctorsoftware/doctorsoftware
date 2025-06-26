@@ -10,73 +10,53 @@ const solutions = [
   {
     title: 'Clinics',
     icon: <FaClinicMedical />,
-    modules: [
-      'Outpatient', 'Telemedicine', 'EMR', 'Queue/Token', 'Kiosk', 'Communication', 'Speech-to-text', 'Medical Camp', 'Diabetes Management', 'Doctor App', 'Revenue Cycle', 'Vaccine Management'
-    ],
+    description: 'Outpatient, Telemedicine, EMR, Queue/Token, Kiosk, Communication, Speech-to-text, Medical Camp, Diabetes Management, Doctor App, Revenue Cycle, Vaccine Management',
     link: '/clinic-software'
   },
   {
     title: 'Hospitals',
     icon: <MdLocalHospital />,
-    modules: [
-      'Inpatient', 'OT Management', 'Nursing', 'Virtual OPD', 'LIMS', 'RIS & PACS', 'Pharmacy', 'Blood Bank', 'Bed & Canteen Management'
-    ]
+    description: 'Inpatient, OT Management, Nursing, Virtual OPD, LIMS, RIS & PACS, Pharmacy, Blood Bank, Bed & Canteen Management'
   },
   {
     title: 'Specialty Care',
     icon: <FaUserMd />,
-    modules: [
-      'OB-GYN', 'Pediatrics', 'Dental', 'Mental Health', 'Rehabilitation', 'Diabetes', 'Physio', 'Orthopedic', 'Ophthalmology'
-    ]
+    description: 'OB-GYN, Pediatrics, Dental, Mental Health, Rehabilitation, Diabetes, Physio, Orthopedic, Ophthalmology'
   },
   {
     title: 'For Patients & Families',
     icon: <FaUsers />,
-    modules: [
-      'Online scheduling', 'Kiosk', 'Patient Portal', 'Mobile App', 'Patient Communication', 'Diabetes Care'
-    ]
+    description: 'Online scheduling, Kiosk, Patient Portal, Mobile App, Patient Communication, Diabetes Care'
   },
   {
     title: 'Hospital Chain',
     icon: <FaHospitalAlt />,
-    modules: [
-      'Centralized Hospital Management'
-    ]
+    description: 'Centralized Hospital Management'
   },
   {
     title: 'Hospital CFO',
     icon: <FaUserTie />,
-    modules: [
-      'Revenue Cycle', 'Accounting', 'Banking', 'Dashboards'
-    ]
+    description: 'Revenue Cycle, Accounting, Banking, Dashboards'
   },
   {
     title: 'Hospital IT Manager',
     icon: <FaUserCog />,
-    modules: [
-      'Cloud Migration', 'Backups', 'Geofencing', 'RPA Automation', 'Security', 'Multilingual Support', 'FHIR/HL7 Compliance', 'Customisations'
-    ]
+    description: 'Cloud Migration, Backups, Geofencing, RPA Automation, Security, Multilingual Support, FHIR/HL7 Compliance, Customisations'
   },
   {
     title: 'Marketing Managers',
     icon: <FaChartLine />,
-    modules: [
-      'Patient Analytics', 'Referral Management', 'CRM', 'Campaigns', 'Surveys', 'Digital Marketing'
-    ]
+    description: 'Patient Analytics, Referral Management, CRM, Campaigns, Surveys, Digital Marketing'
   },
   {
     title: 'Backoffice & HR',
     icon: <FaBriefcaseMedical />,
-    modules: [
-      'Finance', 'HRMS', 'Supply Chain', 'Asset Management', 'Inventory', 'CRM'
-    ]
+    description: 'Finance, HRMS, Supply Chain, Asset Management, Inventory, CRM'
   },
   {
     title: 'Government',
     icon: <MdAccountBalance />,
-    modules: [
-      'Population Health', 'Real-Time Surveillance', 'Compliance (ABHA, PMJJBY)', 'Vaccine Management'
-    ]
+    description: 'Population Health, Real-Time Surveillance, Compliance (ABHA, PMJJBY), Vaccine Management'
   },
 ];
 
@@ -91,7 +71,7 @@ export default function Solutions() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {solutions.map((s, i) => (
               <div key={i}>
-                <SolutionCard title={s.title} icon={s.icon} modules={s.modules} />
+                <SolutionCard title={s.title} icon={s.icon} description={s.description} />
                 {s.link && (
                   <div className="mt-4 text-center">
                     <Link to={s.link} className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold shadow hover:bg-blue-700 transition">Learn More</Link>

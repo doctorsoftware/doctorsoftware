@@ -1,32 +1,13 @@
-import React, { useState } from 'react';
-import { FaChevronDown } from 'react-icons/fa';
+import React from "react";
 
-export default function SolutionCard({ title, icon, modules }) {
-  const [open, setOpen] = useState(false);
+const SolutionCard = ({ title, icon, description }) => {
   return (
-    <div className="bg-white rounded-xl shadow p-6 border border-blue-100 hover:shadow-lg transition flex flex-col">
-      <button
-        className="flex items-center justify-between w-full focus:outline-none"
-        onClick={() => setOpen(o => !o)}
-        aria-expanded={open}
-      >
-        <div className="flex items-center gap-3">
-          <span className="text-3xl text-blue-600">{icon}</span>
-          <span className="font-semibold text-lg text-gray-900">{title}</span>
-        </div>
-        <FaChevronDown className={`ml-2 text-gray-500 transition-transform duration-300 ${open ? 'rotate-180' : ''}`} />
-      </button>
-      <div
-        className={`overflow-hidden transition-all duration-300 ${open ? 'max-h-96 mt-4' : 'max-h-0'}`}
-      >
-        <ul className="pl-2 space-y-2">
-          {modules.map((mod, i) => (
-            <li key={i} className="text-gray-700 text-base flex items-center gap-2">
-              <span className="text-blue-400">•</span> {mod}
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div className="p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
+      <div className="text-4xl mb-3">{icon}</div>
+      <h3 className="text-lg font-semibold mb-2">{title}</h3>
+      <p className="text-sm text-gray-600">{description}</p>
     </div>
   );
-} 
+};
+
+export default SolutionCard; 
