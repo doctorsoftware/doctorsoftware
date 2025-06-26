@@ -8,7 +8,7 @@ import Features from './pages/Features';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
 import ClinicSoftware from './pages/ClinicSoftware';
-import Login from './pages/Login';
+import Login from './pages/Login.jsx';
 import Solutions from './pages/Solutions';
 
 // Simple error boundary
