@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -20,6 +21,20 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
+=======
+import Header from './components/Header';
+import Home from './components/Home';
+import Pricing from './components/Pricing';
+import Contact from './components/Contact';
+
+function App() {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <Header />
+      <Home />
+      <Pricing />
+      <Contact />
+>>>>>>> c241ec8654791414c3b25dd8d321e3439bdc89fc
     </div>
   );
 }
