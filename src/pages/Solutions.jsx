@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdLocalHospital, MdOutlineFamilyRestroom, MdOutlineBusiness, MdOutlineGovernment } from 'react-icons/md';
+import { MdLocalHospital, MdAccountBalance, MdOutlineFamilyRestroom, MdOutlineBusiness } from 'react-icons/md';
 import { FaUsers, FaClinicMedical, FaUserMd, FaUserCog, FaChartLine, FaUserNurse, FaTooth, FaChild, FaBrain, FaHeartbeat, FaBaby, FaUserFriends, FaHospitalAlt, FaCogs, FaChartBar, FaUserTie, FaBriefcaseMedical, FaUserShield, FaUserCheck, FaUserSecret, FaUserGraduate, FaUserAlt, FaUser, FaChevronDown, FaBuilding, FaChartPie, FaTools, FaUserMd as FaDoctor, FaUserFriends as FaPatients, FaUserCog as FaManager, FaUserTie as FaCFO, FaUserShield as FaIT, FaChartLine as FaMarketing, FaBuilding as FaBackoffice, FaUserGraduate as FaHR, FaUserSecret as FaGov, FaUserNurse as FaNurse, FaTooth as FaDental, FaChild as FaPediatric, FaBrain as FaMentalHealth, FaHeartbeat as FaOBGYN, FaBaby as FaOBGYN2, FaUserCheck as FaCompliance, FaUserAlt as FaAsset, FaUser as FaPatient, FaUserFriends as FaFamily, FaUser as FaDoctorPractice, FaUser as FaSpecialty, FaUser as FaEye, FaUser as FaOrthopedic, FaUser as FaRehab, FaUser as FaPhysio, FaUser as FaDiabetes, FaUser as FaOphthalmology, FaUser as FaFinance, FaUser as FaSupplyChain, FaUser as FaInventory, FaUser as FaCRM, FaUser as FaPopulationHealth, FaUser as FaSurveillance, FaUser as FaVaccine, FaUser as FaKiosk, FaUser as FaCommunication, FaUser as FaSpeech, FaUser as FaCamp, FaUser as FaDoctorApp, FaUser as FaRevenue, FaUser as FaOT, FaUser as FaNursing, FaUser as FaVirtualOPD, FaUser as FaLIMS, FaUser as FaRIS, FaUser as FaPACS, FaUser as FaBed, FaUser as FaCanteen, FaUser as FaCentralized, FaUser as FaAccounting, FaUser as FaBanking, FaUser as FaDashboards, FaUser as FaCloud, FaUser as FaBackups, FaUser as FaGeofencing, FaUser as FaRPA, FaUser as FaSecurity, FaUser as FaMultilingual, FaUser as FaFHIR, FaUser as FaCustomisations, FaUser as FaReferral, FaUser as FaCampaigns, FaUser as FaSurveys, FaUser as FaDigitalMarketing, FaUser as FaHRMS, FaUser as FaAssetManagement, FaUser as FaPopulation, FaUser as FaRealTime, FaUser as FaABHA, FaUser as FaPMJJBY } from 'react-icons/fa';
 import SolutionCard from '../components/SolutionCard';
 import Header from '../components/Header';
@@ -73,7 +73,7 @@ const solutions = [
   },
   {
     title: 'Government',
-    icon: <MdOutlineGovernment />,
+    icon: <MdAccountBalance />,
     modules: [
       'Population Health', 'Real-Time Surveillance', 'Compliance (ABHA, PMJJBY)', 'Vaccine Management'
     ]
