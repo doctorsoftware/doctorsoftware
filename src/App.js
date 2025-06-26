@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
-import Home from './pages/Home';
+import Home from './pages/Home.jsx';
 import About from './pages/About';
 import Features from './pages/Features';
 import Pricing from './pages/Pricing';
