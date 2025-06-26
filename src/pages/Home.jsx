@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../components/Header';
 import Footer from '../components/Footer';
 import FeatureCard from '../components/FeatureCard';
 
@@ -25,7 +24,6 @@ const features = [
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
-      <Header />
       {/* Hero Section */}
       <section className="flex-1 flex flex-col items-center justify-center py-20 px-4 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold text-blue-700 mb-4 font-sans drop-shadow">Doctor 247 HMS</h1>
