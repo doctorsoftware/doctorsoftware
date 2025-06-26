@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -8,9 +8,31 @@ import Features from './pages/Features';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
 
+// Simple error boundary
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+  static getDerivedStateFromError(error) {
+    return { hasError: true, error };
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="p-8 text-center text-red-600">
+          <h1 className="text-2xl font-bold mb-4">Something went wrong.</h1>
+          <pre>{this.state.error && this.state.error.toString()}</pre>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 function App() {
   return (
-    <Router>
+    <ErrorBoundary>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,7 +41,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
+    </ErrorBoundary>
   );
 }
 
