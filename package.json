@@ -1,0 +1,20 @@
+{
+  "name": "doctor-247-hms",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Doctor 247 HMS – Hospital Management Software",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+} 
