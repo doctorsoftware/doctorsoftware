@@ -8,6 +8,8 @@ import Features from './pages/Features';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
 import ClinicSoftware from './pages/ClinicSoftware';
+import Login from './pages/Login';
+import Solutions from './pages/Solutions';
 
 // Simple error boundary
 class ErrorBoundary extends React.Component {
@@ -42,6 +44,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/clinic-software" element={<ClinicSoftware />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/solutions" element={<Solutions />} />
       </Routes>
     </ErrorBoundary>
   );
